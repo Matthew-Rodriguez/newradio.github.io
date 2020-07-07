@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/48d9575789.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    <title>Matthew Rodriguez</title>
+   
+  
+</head>
+
+<body onload="myFunction()" style="margin:0;" >
+
+
+    <MAIN id="backg">
+        <div id="user">user database</div>
+
+        <div id="loader">
+            <div class="overlay" id='load'></div>
+
+            <span id="load"></span>
+            <span id="load"></span>
+            <span id="load"></span>
+          </div>
+
+    </MAIN>
+    <div class="left">
+
+<main>
+
+<section id="wrapper">
+
+    <div class="noise"></div>
+<div class="overlay"></div>
+<div class="terminal">
+  <h1 class="role animate-bottom" >
+  Potential Developers</h1>   
+  <br>
+  <br>
+  <a href="#"><p class="output animate-bottom" id="fold" style="transform: translateX(2rem);">View database</p></a>
+  <div id="folder" style="transform: translate(4rem) !important;">  <a href="index.html"><span class="errorcode  name" >name: Matthew Rodriguez </span>
+    <div class=" " style="margin-top: 2rem;" >Front-End Developer</div>
+    <div class="" style="margin-top: 1rem;">Looking to be apart of an amazing team filled with innovativity and creativeness</div>
+
+</a>
+
+</div>
+
+ 
+  
+  <!--<p class="output animate-bottom"><a href="https://github.com/Matthew-Rodriguez"><i class="fab fa-github icongit"></i></a> <a href="https://www.linkedin.com/in/matthew-rodriguez-080697146/"><i class="fab fa-linkedin iconlink"></i></a></p>-->
+
+  
+</div>
+
+
+
+</section>
+</div>
+</main>
+<script src="https://unpkg.com/@barba/core"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+                <script src="index.js"></script>
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+                <script>
+
+let counter2 = 0
+
+$("#fold").click(function() {
+  counter2++
+  if(counter2 % 2 === 1) {
+    $('#folder').css({
+        "display":"unset"
+      })
+      $('#folder2').css({
+        "display":"none"
+      })
+    } else {
+        $('#folder').css({
+        "display":"none",
+    })
+}
+})
+
+let counter = 0
+
+$("#fold2").click(function() {
+  counter++
+  if(counter % 2 === 1) {
+    $('#folder2').css({
+        "display":"unset"
+      })
+      $('#folder').css({
+        "display":"none"
+      })
+
+    } else {
+        $('#folder2').css({
+        "display":"none",
+
+    })
+}
+})
+  
+
+                </script>
+
+                <script>
+                    var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("backg").style.display = "none";
+
+  document.getElementById("wrapper").style.display = "block";
+
+
+let counter2 = 0
+
+$("#fold").click(function() {
+  counter2++
+  if(counter2 % 2 === 1) {
+    $('#folder').css({
+        "display":"unset"
+      })
+      $('#folder2').css({
+        "display":"none"
+      })
+    } else {
+        $('#folder').css({
+        "display":"none",
+    })
+}
+})
+}
+                </script>
+</body>
+
+
+</html>

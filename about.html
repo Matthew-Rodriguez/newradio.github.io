@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/48d9575789.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        <title>Matthew Rodriguez</title>
+   
+  
+</head>
+
+<body id="aboutpage">
+
+
+   
+
+
+<section>
+
+    <div class="noise"></div>
+<div class="overlay"></div>
+<div class="terminal">
+  <h1 class="role animate-bottom" style="color: white;">
+  About </h1>
+
+  <span class="about animate-bottom">
+I help small businesses gain more traction in the internet world. Fast, responsive, and creative projects are what I do. The ability to bring ideas to life is the locomotive behind my passion for web development.
+</span>
+  <br>
+  <br>
+  <a href="#" id="fold"> <p class="output animate-bottom" id="fold">Technologies used </p></a>
+    <div id="folder">^  React,  Javascript,  Greensock, Jquery, CSS3 with preprocessors such as Sass, and utilizing best practices under HTML5.
+        <br><br> For design purposes I use Adobe Illustrator and Figma
+    </div>
+
+    <a href="#" id="fold2"> <p class="output animate-bottom" id="fold2" >Schooling</p></a>
+    <div id="folder2"> ^  Attended College of the Sequoias in my hometown and since moving to Los Angeles I have been going to Santa Monica College. <br><br>Most beneficially, I've been mentored by
+         SpaceX Software Engineer Michael Dowd (also my brother-in-law), and Christoper D. from Cyberninjaz. </div>
+
+
+  <a href="projjjj.html"> <p class="output animate-bottom" style="margin-top:3rem; font-size:1.3rem;">Projects  </p></a>
+  
+  <a href="maybecontact.html"> <p class="output animate-bottom" style="font-size:1.3rem;">Contact   </p></a>
+
+  
+</div>
+
+<a href="maybecontact.html"><div class="exit3"> exit<i class="fas fa-power-off icon"></i></div> </a>
+
+</section>
+
+                <script src="index.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+                <script>
+
+let counter2 = 0
+
+$("#fold").click(function() {
+  counter2++
+  if(counter2 % 2 === 1) {
+    $('#folder').css({
+        "display":"unset"
+      })
+      $('#folder2').css({
+        "display":"none"
+      })
+    } else {
+        $('#folder').css({
+        "display":"none",
+    })
+}
+})
+
+let counter = 0
+
+$("#fold2").click(function() {
+  counter++
+  if(counter % 2 === 1) {
+    $('#folder2').css({
+        "display":"unset"
+      })
+      $('#folder').css({
+        "display":"none"
+      })
+
+    } else {
+        $('#folder2').css({
+        "display":"none",
+
+    })
+}
+})
+  
+
+                </script>
+
+</body>
+
+
+</html>

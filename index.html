@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/48d9575789.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    <title>Matthew Rodriguez</title>
+   
+  
+</head>
+
+<body onload="myFunction()" style="margin:0;" >
+
+
+    <MAIN id="backg">
+        <div id="user">Loading user</div>
+
+        <div id="loader">
+            <div class="overlay" id='load'></div>
+
+            <span id="load"></span>
+            <span id="load"></span>
+            <span id="load"></span>
+          </div>
+
+    </MAIN>
+    <div class="left">
+
+<main>
+
+<section id="wrapper">
+
+    <div class="noise"></div>
+<div class="overlay"></div>
+<div class="terminal">
+  <h1 class="role animate-bottom">
+  Front-end Developer</h1>   
+  <span class="errorcode animate-bottom name">name: Matthew Rodriguez</span>
+  <br>
+  <br>
+  <a href="about.html"><p class="output animate-bottom">About Matthew</p></a>
+  <a href="projjjj.html"> <p class="output animate-bottom">Projects  </p></a>
+  <a href="maybecontact.html"> <p class="output animate-bottom">Contact</p></a>
+
+  
+  
+  <!--<p class="output animate-bottom"><a href="https://github.com/Matthew-Rodriguez"><i class="fab fa-github icongit"></i></a> <a href="https://www.linkedin.com/in/matthew-rodriguez-080697146/"><i class="fab fa-linkedin iconlink"></i></a></p>-->
+
+  
+</div>
+<div class="parent">
+<div class="personFound">PERSON FOUND</div>
+</div>
+
+<a href="userdatabase.html"><div class="exit animate-bottom"> exit<i class="fas fa-power-off icon"></i></div> </a>
+
+</section>
+</div>
+</main>
+<script src="https://unpkg.com/@barba/core"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+                <script src="index.js"></script>
+
+                <script>
+                    var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("backg").style.display = "none";
+
+  document.getElementById("wrapper").style.display = "block";
+}
+                </script>
+</body>
+
+
+</html>
