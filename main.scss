@@ -109,11 +109,31 @@ section {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: portrait) {
-    height: 102vh;
+    height: 115vh;
     width: 57vh;
+}
+@media screen and (max-width: 525px) {
+  height: 130%;
+}
+}
 
+.abouterm {
+  @media screen and (max-width: 525px) {
+    height: 130%; 
+  }
 }
+.aboutover {
+  @media screen and (max-width: 525px) {
+    height: 130% !important;
+  }
 }
+
+#aboutpage {
+  @media screen and (max-width: 525px) {
+    overflow-y: unset;
+  }
+}
+
 
 .role {
     width: 150%;
@@ -163,6 +183,8 @@ section {
       rgba(0, 0, 0, 0) 100%);
   background-size: auto 4px;
   z-index: 1;
+
+
 }
 
 .overlay::before {
@@ -267,9 +289,13 @@ a::after {
 }
 
 .mediaq {
+  
   @media screen and (max-width: 525px) {
     top: unset !important;
     position: relative !important;
+    color: white;
+    font-weight: 100;
+    font-family: sans-serif;
      }
 }
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -453,7 +479,7 @@ and (orientation: portrait) {
 
     }
     .exit3{ 
-      position:absolute;
+      position:fixed;
       bottom: 4rem;
       right:1.5rem;
     color: red;
@@ -464,13 +490,7 @@ and (orientation: portrait) {
       bottom: 2rem;
        }
   }
-.exitproj {
-  @media screen and (max-width: 525px) {
-    bottom: -23rem;
-    right: 15.5rem;
 
-  }
-}
         
     .exit2 { 
       position:absolute;
@@ -569,58 +589,14 @@ and (max-device-width : 667px) {display:none}
 #wrapper {
     display: none;
     overflow: hidden;
+   
+    
+    @media screen and (max-width: 525px) {
+
+      overflow-y: unset;
+      height: 131vh;
+      }
 }
-
-
-.bio {
-   width: 29%;
-    font-size: .75rem;
-display: inline-block;
-margin-right: 2rem;
-position: relative;
-left: 2.2rem;
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  {font-size:6px; left: 0; margin: 0; }
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {font-size:4px; left: 0; margin: 0;}
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {font-size:4px; left: 0; margin: 0;}
-}
-
-
-.bio2 {
-    width: 29%;
-     font-size: .73rem;
- display: inline-block;
- position: relative;
- top: 5rem;
- left: -18rem;
-
- @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px)  {font-size:6px; left: 0; margin: 0; }
-
- @media only screen 
- and (min-device-width : 375px) 
- and (max-device-width : 812px)
- and (-webkit-device-pixel-ratio : 3) {font-size:4px; left: 0; margin: 0;}
- 
- @media only screen 
- and (min-device-width : 375px) 
- and (max-device-width : 667px) {font-size:4px; left: 0; margin: 0; top: 1.5rem; left: -3rem;}
- }
-
-
- #foldername {
-
- }
 
 
 
@@ -732,7 +708,7 @@ and (max-device-width : 667px) {font-size:4px; left: 0; margin: 0;}
       right: 4rem;
       display: block;
       line-height: 1rem;
-      width: 177%;
+      width: 165%;
     }
     @media screen 
     and (device-width: 360px) 
@@ -818,6 +794,10 @@ and (max-device-width : 667px) {width: 60px; height: 70px; transform:translateX(
    color: rgb(255, 255, 255);
    margin-right: 3rem;
 
+   @media screen and (max-width: 525px) {
+    margin-right: 2rem;
+    }
+
    &:hover {
      color: rgb(0, 0, 0);
    }
@@ -826,6 +806,11 @@ and (max-device-width : 667px) {width: 60px; height: 70px; transform:translateX(
  .iconlink {
   color: rgb(255, 255, 255);
   margin-right: 3rem;
+
+  
+  @media screen and (max-width: 525px) {
+    margin-right: 2rem;
+    }
 
   &:hover {
     color: rgb(0, 0, 0);
@@ -893,7 +878,7 @@ body {
   
   .title {
      text-align: center;
-     font-family: Raleway, sans-serif;
+     font-family: "Press Start 2P", sans-serif;
      text-transform: uppercase;
      letter-spacing: 3px;
      font-size: 36px;
@@ -1001,6 +986,11 @@ padding:0;
 .brand{
   text-align: center;
    color: #fff;
+   font-family: "Press Start 2P";
+
+   @media screen and (max-width: 525px) {
+    font-size: 20px;
+  }
   }
 
 .brand span{
@@ -1136,9 +1126,11 @@ padding:0;
       0 0 2px rgba(255, 255, 255, 0.8);
       overflow: unset;
   height: 100%;
-      @media only screen 
-  and (min-device-width : 300px) 
-  and (max-device-width : 700px) { height: 130vh; background-repeat: repeat; }
+  @media screen and (max-width: 525px) {
+    overflow: unset;
+    height: 135%;
+    background-repeat: repeat;
+  } 
 }
 
 li {
@@ -1363,7 +1355,7 @@ video {
   font-size: 2.5rem;
   font-family: "Press Start 2P";
   @media screen and (max-width: 525px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: relative;
     top: 4rem;
     left: 10rem;
@@ -1378,7 +1370,7 @@ video {
   @media screen and (max-width: 525px) {
     font-size: 26px;
     position: relative;
-    left: -5.5rem;
+    left: -6rem;
   } 
   @media screen 
   and (device-width: 360px) 
@@ -1428,4 +1420,18 @@ video {
   @media screen and (max-width: 525px) {
     transform: translateX(0rem);
   }
+}
+
+
+
+.bodyindex {
+  @media screen and (max-width: 525px) {
+ overflow-y:unset;
+  }
+}
+
+#conheight {
+  @media screen and (max-width: 525px) {
+    height: 160vh;
+     }
 }

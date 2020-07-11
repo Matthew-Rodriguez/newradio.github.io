@@ -141,8 +141,32 @@ section {
 
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   .aboutsec {
-    height: 102vh;
+    height: 115vh;
     width: 57vh;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .aboutsec {
+    height: 130%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .abouterm {
+    height: 130%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .aboutover {
+    height: 130% !important;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  #aboutpage {
+    overflow-y: unset;
   }
 }
 
@@ -303,6 +327,9 @@ a {
   .mediaq {
     top: unset !important;
     position: relative !important;
+    color: white;
+    font-weight: 100;
+    font-family: sans-serif;
   }
 }
 
@@ -631,7 +658,7 @@ a {
 }
 
 .exit3 {
-  position: absolute;
+  position: fixed;
   bottom: 4rem;
   right: 1.5rem;
   color: red;
@@ -642,13 +669,6 @@ a {
   .exit3 {
     font-size: 1rem;
     bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 525px) {
-  .exitproj {
-    bottom: -23rem;
-    right: 15.5rem;
   }
 }
 
@@ -779,71 +799,10 @@ a {
   overflow: hidden;
 }
 
-.bio {
-  width: 29%;
-  font-size: .75rem;
-  display: inline-block;
-  margin-right: 2rem;
-  position: relative;
-  left: 2.2rem;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .bio {
-    font-size: 6px;
-    left: 0;
-    margin: 0;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .bio {
-    font-size: 4px;
-    left: 0;
-    margin: 0;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  .bio {
-    font-size: 4px;
-    left: 0;
-    margin: 0;
-  }
-}
-
-.bio2 {
-  width: 29%;
-  font-size: .73rem;
-  display: inline-block;
-  position: relative;
-  top: 5rem;
-  left: -18rem;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .bio2 {
-    font-size: 6px;
-    left: 0;
-    margin: 0;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .bio2 {
-    font-size: 4px;
-    left: 0;
-    margin: 0;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  .bio2 {
-    font-size: 4px;
-    left: 0;
-    margin: 0;
-    top: 1.5rem;
-    left: -3rem;
+@media screen and (max-width: 525px) {
+  #wrapper {
+    overflow-y: unset;
+    height: 131vh;
   }
 }
 
@@ -974,7 +933,7 @@ a {
     right: 4rem;
     display: block;
     line-height: 1rem;
-    width: 177%;
+    width: 165%;
   }
 }
 
@@ -1059,6 +1018,12 @@ video::-webkit-media-controls {
   margin-right: 3rem;
 }
 
+@media screen and (max-width: 525px) {
+  .icongit {
+    margin-right: 2rem;
+  }
+}
+
 .icongit:hover {
   color: black;
 }
@@ -1066,6 +1031,12 @@ video::-webkit-media-controls {
 .iconlink {
   color: white;
   margin-right: 3rem;
+}
+
+@media screen and (max-width: 525px) {
+  .iconlink {
+    margin-right: 2rem;
+  }
 }
 
 .iconlink:hover {
@@ -1127,7 +1098,7 @@ body {
 
 .get-in-touch .title {
   text-align: center;
-  font-family: Raleway, sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 36px;
@@ -1228,6 +1199,13 @@ ul {
 .brand {
   text-align: center;
   color: #fff;
+  font-family: "Press Start 2P";
+}
+
+@media screen and (max-width: 525px) {
+  .brand {
+    font-size: 20px;
+  }
 }
 
 .brand span {
@@ -1363,9 +1341,10 @@ ul {
   height: 100%;
 }
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 700px) {
+@media screen and (max-width: 525px) {
   .contactPage {
-    height: 130vh;
+    overflow: unset;
+    height: 135%;
     background-repeat: repeat;
   }
 }
@@ -1603,7 +1582,7 @@ li :last-child {
 
 @media screen and (max-width: 525px) {
   .conexit {
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: relative;
     top: 4rem;
     left: 10rem;
@@ -1617,7 +1596,7 @@ li :last-child {
   .roleque {
     font-size: 26px;
     position: relative;
-    left: -5.5rem;
+    left: -6rem;
   }
 }
 
@@ -1664,6 +1643,18 @@ li :last-child {
   .view {
     -webkit-transform: translateX(0rem);
             transform: translateX(0rem);
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .bodyindex {
+    overflow-y: unset;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  #conheight {
+    height: 160vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
