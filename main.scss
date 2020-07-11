@@ -100,21 +100,31 @@ section {
         0 0 2px rgba(255, 255, 255, 0.8);
         overflow: hidden;
   height: 100vh;
+
+  
 }
+.aboutsec {
+  @media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    height: 102vh;
+    width: 57vh;
+
+}
+}
+
 .role {
     width: 150%;
     @media screen and (max-width: 1430px) {
         width: 120%;
     }
 
-    @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {font-size: 1.5rem; text-align: center; transform: translateY(-30px);}
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {font-size: 1.5rem; text-align: center; transform: translateY(-30px);}
+    @media screen and (max-width: 525px) {
+      transform: translateX(6.5rem);
+      font-size: 2rem;
+    }
 }
 
 .name {
@@ -191,19 +201,23 @@ and (max-device-width : 667px) {font-size: 1.5rem; text-align: center; transform
   padding: 4rem;
   text-transform: uppercase;
 
-  @media screen and (max-width: 1200px) {
-      max-width: 55%;
+  @media screen and (max-width: 525px) {
+    font-size: 14px;
+    width: 52%;
+    transform: translateY(-29px);
   }
-  @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {font-size: .8rem; transform: translateY(20px);}
 
+  @media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    transform: translateY(-35px);
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {font-size: .8rem; transform: translateY(20px);}
 }
+  
+}
+
 
 .output {
   color: rgba(128, 255, 128, 0.8);
@@ -214,11 +228,23 @@ and (max-device-width : 667px) {font-size: .8rem; transform: translateY(20px);}
 
       &:hover {
           margin-left: 2rem;
+
+          @media screen 
+          and (device-width: 360px) 
+          and (device-height: 640px) 
+          and (-webkit-device-pixel-ratio: 3) 
+          and (orientation: portrait) {
+           margin-left: 1rem;
+          }
       }
 }
 
 .output::before {
   content: "> ";
+  
+  @media screen and (max-width: 525px) {
+ transform: translateX(-20px);
+  }
 }
 
 a {
@@ -234,7 +260,18 @@ a::after {
  
 }
 
+.aboutme {
+  @media screen and (max-width: 525px) {
+    transform: translateX(3.5rem);
+     }
+}
 
+.mediaq {
+  @media screen and (max-width: 525px) {
+    top: unset !important;
+    position: relative !important;
+     }
+}
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 #folder {
@@ -244,18 +281,19 @@ a::after {
     position: relative;
     left:5rem;
     top: -1rem;
-
+ 
     animation: slide-in-blurred-right .4s forwards;
 
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 812px)
-    and (-webkit-device-pixel-ratio : 3) {font-size: 6px; transform: translateX(2rem); left: 2rem;}
+    @media screen and (max-width: 525px) {
+      font-size: 7px; top: 3rem; left: 2rem;
+    } 
+ 
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {font-size: 6px; transform: translateX(2rem); left: 2rem;}
 
+}
+
+#aboutpage {
+  background-color: black;
 }
 
 #folder2 {
@@ -270,14 +308,10 @@ and (max-device-width : 667px) {font-size: 6px; transform: translateX(2rem); lef
     top: -1rem;
     animation: slide-in-blurred-right .4s forwards;
 
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 812px)
-    and (-webkit-device-pixel-ratio : 3) {font-size: 6px;  transform: translateX(2rem); left: 2rem;}
+    @media screen and (max-width: 525px) {
+      font-size: 7px; top: 3rem; left: 2rem;
+    }
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {font-size: 6px;  transform: translateX(2rem); left: 2rem;}
 }
 
 #folder3 {
@@ -292,6 +326,11 @@ and (max-device-width : 667px) {font-size: 6px;  transform: translateX(2rem); le
     top: -1rem;
 
     animation: slide-in-blurred-right .4s forwards;
+
+    @media screen and (max-width: 525px) {
+      font-size: 6px; transform: translateX(2rem); left: 2rem; top: 3rem;
+    }
+
 }
 
 #folder4 {
@@ -305,6 +344,11 @@ and (max-device-width : 667px) {font-size: 6px;  transform: translateX(2rem); le
     left:5rem;
     top: -1rem;
     animation: slide-in-blurred-right .4s forwards;
+
+    @media screen and (max-width: 525px) {
+      font-size: 6px; transform: translateX(2rem); left: 2rem; top: 3rem;
+    }
+
 }
 
 #folder5 {
@@ -318,6 +362,11 @@ and (max-device-width : 667px) {font-size: 6px;  transform: translateX(2rem); le
     left:5rem;
     top: -1rem;
     animation: slide-in-blurred-right .4s forwards;
+
+    @media screen and (max-width: 525px) {
+      font-size: 6px; transform: translateX(2rem); left: 2rem; top: 3rem;
+    }
+
 }
 
 #bio {
@@ -370,23 +419,22 @@ and (max-device-width : 667px) {font-size: 6px;  transform: translateX(2rem); le
  font-size: 7.5rem;
  display: inline;
 
+ @media only screen and (min-width : 1700px) {
+  font-size: 9rem;
+} 
+@media screen and (max-width: 525px) {
 
-   
-    @media only screen 
-    and (min-device-width : 768px) 
-    and (max-device-width : 1024px)  { font-size: 4rem; top: 35rem; left: 0rem;}
+font-size: 30px;
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {font-size: 2.1rem; width: 120%; left:-.5rem;}
+}
+@media screen 
+and (device-width: 360px) 
+and (device-height: 640px) 
+and (-webkit-device-pixel-ratio: 3) 
+and (orientation: portrait) {
+  font-size: 25px;
 
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {font-size: 2.1rem; width: 120%; left:-.5rem;}
-
-
+}
 } 
 
 @keyframes blink {
@@ -410,8 +458,20 @@ and (max-device-width : 667px) {font-size: 2.1rem; width: 120%; left:-.5rem;}
       right:1.5rem;
     color: red;
     font-size: 1.5rem;
-          
-        }
+
+    @media screen and (max-width: 525px) {
+      font-size: 1rem;
+      bottom: 2rem;
+       }
+  }
+.exitproj {
+  @media screen and (max-width: 525px) {
+    bottom: -23rem;
+    right: 15.5rem;
+
+  }
+}
+        
     .exit2 { 
       position:absolute;
       bottom: 40rem;
@@ -559,16 +619,7 @@ and (max-device-width : 667px) {font-size:4px; left: 0; margin: 0;}
 
 
  #foldername {
- 
 
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 812px)
-    and (-webkit-device-pixel-ratio : 3) {transform: translateX(-2.3rem); }
-    
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 667px) {transform: translateX(-2.3rem);}
  }
 
 
@@ -608,6 +659,12 @@ and (max-device-width : 667px) {font-size:4px; left: 0; margin: 0;}
    transform: translateY(16rem);
    color: rgb(6, 24, 6);
     font-size: 1.4rem;
+
+    @media screen and (max-width: 525px) {
+
+      transform: translate(1rem, 11rem);
+      
+      }
   }
   
   @-webkit-keyframes spin {
@@ -644,8 +701,22 @@ and (max-device-width : 667px) {font-size:4px; left: 0; margin: 0;}
     text-align: center;
   }
 
+.tech {
+  @media screen and (max-width: 525px) {
+   width: 140%;
+  }
+  @media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    width: 160%;
+  }
+}
 
-
+.btag {
+  color: white;
+}
 
 
 
@@ -654,15 +725,30 @@ and (max-device-width : 667px) {font-size:4px; left: 0; margin: 0;}
     margin: 2rem;
     width: 120%;
 
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 812px)
-    and (-webkit-device-pixel-ratio : 3) {font-size: 7px; }
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { font-size: 7px;}
-}
+    @media screen and (max-width: 525px) {
+      font-size: 9px;
+      letter-spacing: 1px;
+      position: relative;
+      right: 4rem;
+      display: block;
+      line-height: 1rem;
+      width: 177%;
+    }
+    @media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) {
+      font-size: 9px;
+      letter-spacing: 1px;
+      position: relative;
+      right: 3rem;
+      display: block;
+      line-height: 1rem;
+      width: 163%;
+  
+  }
+  }
 
 
       video {
@@ -720,25 +806,17 @@ and (max-device-width : 667px) {width: 60px; height: 70px; transform:translateX(
       color: rgba(128, 255, 128, 0.8);
 
   }
-
- #fold {
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 812px)
-    and (-webkit-device-pixel-ratio : 3) {margin-top:2rem;}
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { margin-top:2em; text-align: center; transform: translateX(-1rem);}
- }
-
-
+#fold {
+  @media screen and (max-width: 525px) {
+  margin-top: -1rem;
+  }
+}
 
  
  
  .icongit {
    color: rgb(255, 255, 255);
-   margin-right: 4rem;
+   margin-right: 3rem;
 
    &:hover {
      color: rgb(0, 0, 0);
@@ -747,6 +825,7 @@ and (max-device-width : 667px) { margin-top:2em; text-align: center; transform: 
 
  .iconlink {
   color: rgb(255, 255, 255);
+  margin-right: 3rem;
 
   &:hover {
     color: rgb(0, 0, 0);
@@ -823,6 +902,8 @@ body {
      
   }
 }
+
+
 
 .contact-form {
   
@@ -1037,6 +1118,8 @@ padding:0;
       0 0 2px rgba(255, 255, 255, 0.8);
   overflow-y: unset;
 
+
+
 }
 
 .contactPage {
@@ -1187,6 +1270,10 @@ and (max-device-width : 667px) {font-size: .8rem; transform: translateY(20px);}
     font-size: 1.4rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-width: 525px) {
+ font-size: .7rem;
+  }
 }
 
 .card .card-content .card-title, .card-reveal .card-title{
@@ -1205,6 +1292,10 @@ and (max-device-width : 667px) {font-size: .8rem; transform: translateY(20px);}
     padding: 2px;
     text-align: right;
     margin-left:90px;
+
+    @media screen and (max-width: 525px) {
+      display: none;
+    }
 }
 
 
@@ -1219,7 +1310,11 @@ and (max-device-width : 667px) {font-size: .8rem; transform: translateY(20px);}
       0 0 2px rgba(255, 255, 255, 0.8);
  overflow-y: unset;
  background-repeat: repeat;
- height: 170vh;
+ height: 150vh;
+
+ @media only screen and (min-width : 1700px) {
+  height: 140vh;
+}
 }
 
 .projj {
@@ -1238,8 +1333,99 @@ and (max-device-width : 667px) {font-size: .8rem; transform: translateY(20px);}
   font-size: 2rem;
   transform: translateY(2rem);
   text-decoration: none;
+  @media screen and (max-width: 525px) {
+    font-size: 15px;
+    display: flex;
+    width: 180%;
+    padding-bottom: 2rem;
+    transform: translate(3rem, 6rem);
+  }
 }
 
 #fold2 {
   text-decoration: none;
+}  
+
+video {
+  
+  @media screen and (max-width: 525px) {
+    transform: unset;
+  }
+}
+
+.col-md-6 {
+  @media screen and (max-width: 525px) {
+    width: 205%;
+  }
+}
+
+.conexit {
+  font-size: 2.5rem;
+  font-family: "Press Start 2P";
+  @media screen and (max-width: 525px) {
+    font-size: 1.5rem;
+    position: relative;
+    top: 4rem;
+    left: 10rem;
+    width: 20%;
+    margin-bottom: 2rem;
+    font-family: "Press Start 2P";
+  }
+}
+
+
+.roleque {
+  @media screen and (max-width: 525px) {
+    font-size: 26px;
+    position: relative;
+    left: -5.5rem;
+  } 
+  @media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    font-size: 23px;
+
+}
+}
+
+
+.nameque {
+  @media screen and (max-width: 525px) {
+ 
+    position: relative;
+    left: 2.5rem;
+  } 
+  @media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    left: 1.5rem;
+
+}
+}
+
+
+.outputque {
+  @media screen and (max-width: 525px) {
+
+  width: 155%;
+  margin-top: 2rem;
+  }
+}
+
+.potential {
+  @media screen and (max-width: 525px) {
+    position: relative !important;
+    top: 1rem !important;
+    line-height: 2rem;
+  }
+}
+.view {
+  transform: translateX(2rem);
+  @media screen and (max-width: 525px) {
+    transform: translateX(0rem);
+  }
 }
